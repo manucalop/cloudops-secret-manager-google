@@ -5,7 +5,7 @@ import json
 import logging
 
 
-class GCPSecret:
+class SecretManager:
     def __init__(self, project_id: str, secret_id: str):
         self.project_id = project_id
         self.secret_id = secret_id

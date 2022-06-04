@@ -1,1 +1,3 @@
-__version__ = "0.1.0"
+from cloudops_google_secretmanager.secretmanager import SecretManager
+
+__all__ = ["SecretManager"]

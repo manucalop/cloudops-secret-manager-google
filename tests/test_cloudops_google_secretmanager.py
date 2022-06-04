@@ -1,5 +1,8 @@
-from cloudops_google_secretmanager import __version__
+from cloudops_google_secretmanager import SecretManager
 
 
-def test_version():
-    assert __version__ == '0.1.0'
+class TestSecretManager:
+    def test_get_secret(self):
+        secret_manager = SecretManager("test-project", "test-secret")
+        secret = secret_manager.pull()
+        assert secret == "test-secret-value"
