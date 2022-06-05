@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cloudops-google-secretmanager"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Manuel Castillo <manucalop@gmail.com>"]
 packages = [{include = "cloudops_google_secretmanager"}]
