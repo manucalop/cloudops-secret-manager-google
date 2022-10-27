@@ -1,11 +1,12 @@
-from google.cloud import secretmanager
-from google.api_core.exceptions import AlreadyExists
-import google_crc32c
 import json
 import logging
 
+import google_crc32c
+from google.api_core.exceptions import AlreadyExists
+from google.cloud import secretmanager
 
-class SecretManager:
+
+class GoogleSecret:
     def __init__(self, project_id: str, secret_id: str):
         self.project_id = project_id
         self.secret_id = secret_id
