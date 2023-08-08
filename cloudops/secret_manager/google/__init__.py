@@ -1,5 +1,5 @@
-from cloudops.secret_manager.google.secret import GoogleSecret
+from cloudops.secret_manager.google.secret import Secret
 
 __all__ = [
-    "GoogleSecret",
+    "Secret",
 ]
